@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+  Name: Ryan Olsen
+  Date Created: 12/14/18
+  Most recent revision:
+-->
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+  </head>
+
+  <style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+  </style>
+
+<body>
+
+  <header>
+  <h1>Pizza Crown</h1>
+  </header>
+
+  <nav>
+    <hr />
+    <p><a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a></p>
+    <hr />
+  </nav>
+
+  <div class="content">
+    <form>
+      Name: <input type="text" name="userName"/><br>
+      Email: <input type="text" name="userEmail"/><br>
+      Phone: <input type="text" name="userPhone"/><br>
+      Reason for Inquiry: <select name="reason">
+                            <option value="catering">Catering</option>
+                            <option value="party">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                          </select><br>
+      Additional Information: <textarea name="additionalInformation"></textarea><br>
+      Have you been to the resturant? <input type="radio" name="visited" value="NO" checked/>No <input type="radio" name="visited" value="YES"/>Yes<br>
+      Best days to contact you: <input type="checkbox" name="available" value="M"/>M
+                                <input type="checkbox" name="available" value="T"/>T
+                                <input type="checkbox" name="available" value="W"/>W
+                                <input type="checkbox" name="available" value="TH"/>Th
+                                <input type="checkbox" name="available" value="F"/>F <br>
+      <input type="submit" value="Send Request"/>
+    </form>
+  </div>
+
+  <footer
+    <p>&nbsp;</p>
+    <hr />
+    <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
+    <p>612.342.5555</p>
+  </footer>
+
+</body>
+
+</html>
