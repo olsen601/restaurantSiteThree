@@ -2,19 +2,46 @@
 <!--
   Name: Ryan Olsen
   Date Created: 12/14/18
-  Most recent revision:
+  Most recent revision: 12/19/18
 -->
 <html lang="en">
   <head>
     <title>Menu</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+    <style>
+      .content {
+        max-width: 400px;
+        margin: auto;
+        background-color: #ECF0F1;
+      }
+      article {
+        padding: 1%;
+        margin: auto;
+        text-align: center;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #3498DB;
+      }
+      h3 {
+        text-align: center;
+        color: #2C3E50;
+      }
+      table {
+        width: 400px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #3498DB;
+        padding: 5px 0px 10px 5px;
+      }
+      th {
+        font-size: 1.17em;
+        color: #2C3E50;
+      }
+    </style>
   </head>
 
-  <style>
-    .content {
-      max-width: 500px;
-      margin: auto;
-    }
-  </style>
 
 <body>
 
@@ -31,26 +58,48 @@
   <div class="content">
     <section>
       <article>
-        <p><b>The Classic</b><br>
-          A pepperoni pizza with cheese and red sauce.
+        <h3>The Classic</h3>
+        <p>A pepperoni pizza with cheese and red sauce.
         <br>$10.99</p>
       </article>
       <article>
-        <p><b>The Meat Lover</b><br>
-          A pizza with sausage, pepperoni, bacon, and chicken.
+        <h3>The Meat Lover</h3>
+        <p>A pizza with sausage, pepperoni, bacon, and chicken.
         <br>$10.99</p>
       </article>
       <article>
-        <p><b>The Pineapple</b><br>
-          Canadian Bacon and Pineapple.
+        <h3>The Pineapple</h3>
+        <p>Canadian Bacon and Pineapple.
         <br>$10.99</p>
       </article>
     </section>
+    <table>
+      <tr>
+        <th>Beverages</th>
+      </tr>
+      <tr>
+        <td>Root Beer</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Bottled Water</td>
+        <td>$1.25</td>
+      </tr>
+      <tr>
+        <td>Lemonade</td>
+        <td>$1.00</td>
+      </tr>
+      <tr>
+        <td>Iced Tea</td>
+        <td>$1.25</td>
+      </tr>
+    </table>
   </div>
 
+  <p>&nbsp;</p>
+  <hr />
+
   <footer
-    <p>&nbsp;</p>
-    <hr />
     <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
     <p>612.342.5555</p>
   </footer>

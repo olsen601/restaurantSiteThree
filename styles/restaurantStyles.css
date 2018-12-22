@@ -1,0 +1,40 @@
+/*
+  Name: Ryan Olsen
+  Date Created: 12/19/18
+  Most recent revision:
+*/
+header, footer {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  color: #E74C3C;
+  background-color: #2C3E50;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+h1 {
+  letter-spacing: 4px;
+}
+a {
+  font-family: 'Staatliches', monospace;
+  padding: 0px 10px 0px 10px;
+  font-weight: normal;
+  font-size: 1.25em;
+  color: #2C3E50;
+  text-decoration: underline;
+}
+a:link {
+  color: #2C3E50;
+  text-decoration: underline;
+}
+a:visited {
+  color: #3498DB;
+  text-decoration: underline;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: unnderline;
+}
+a:active {
+  color: #E74C3C;
+  text-decoration: none;
+}

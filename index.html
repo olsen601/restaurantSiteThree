@@ -2,19 +2,25 @@
 <!--
   Name: Ryan Olsen
   Date Created: 12/14/18
-  Most recent revision:
+  Most recent revision: 12/19/18
 -->
 <html lang="en">
   <head>
     <title>Home Page</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+    <style>
+      .content {
+        max-width: 500px;
+        margin: auto;
+      }
+      body {
+        background-color: #2980B9;
+      }
+    </style>
   </head>
 
-  <style>
-    .content {
-      max-width: 500px;
-      margin: auto;
-    }
-  </style>
 
 <body>
 
@@ -29,14 +35,15 @@
   </nav>
 
   <div class="content">
-    <img src="images/pizza.jpg" alt="Photo of Pizza" width=400 height=150 />
-    <p>Resturant Description <br />
+    <img src="images/pizza.jpg" alt="Photo of Pizza" style="width: 400px; height: 150px; display: block; margin-left: auto; margin-right: auto; " />
+    <p>Restaurant Description <br />
     A local pizzeria providing great food and atmosphere to the downtown Minneapolis area since 2010. The award winning deep dish pizza, hand tossed salads and italian inspired sandwiches cater to all tastes.</p>
   </div>
 
+  <p>&nbsp;</p>
+  <hr />
+
   <footer
-    <p>&nbsp;</p>
-    <hr />
     <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
     <p>612.342.5555</p>
   </footer>

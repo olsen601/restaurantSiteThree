@@ -2,19 +2,32 @@
 <!--
   Name: Ryan Olsen
   Date Created: 12/14/18
-  Most recent revision:
+  Most recent revision: 12/19/18
 -->
 <html lang="en">
   <head>
     <title>Contact Us</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+    <style>
+      .content {
+        max-width: 500px;
+        margin: auto;
+        padding: 1%;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #3498DB;
+      }
+      form, input, select {
+        margin: 5px 10px 5px 10px;
+      }
+      #requiredInput {
+        font-weight: bold;
+      }
+    </style>
   </head>
 
-  <style>
-    .content {
-      max-width: 500px;
-      margin: auto;
-    }
-  </style>
 
 <body>
 
@@ -30,9 +43,9 @@
 
   <div class="content">
     <form>
-      Name: <input type="text" name="userName"/><br>
-      Email: <input type="text" name="userEmail"/><br>
-      Phone: <input type="text" name="userPhone"/><br>
+      <span id="requiredInput">Name: </span><input type="text" name="userName" required/><br>
+      <span id="requiredInput">Email: </span><input type="text" name="userEmail" required/><br>
+      <span id="requiredInput">Phone: </span><input type="text" name="userPhone" required/><br>
       Reason for Inquiry: <select name="reason">
                             <option value="catering">Catering</option>
                             <option value="party">Private Party</option>
@@ -40,7 +53,7 @@
                             <option value="other">Other</option>
                           </select><br>
       Additional Information: <textarea name="additionalInformation"></textarea><br>
-      Have you been to the resturant? <input type="radio" name="visited" value="NO" checked/>No <input type="radio" name="visited" value="YES"/>Yes<br>
+      Have you been to the restaurant? <input type="radio" name="visited" value="NO" checked/>No <input type="radio" name="visited" value="YES"/>Yes<br>
       Best days to contact you: <input type="checkbox" name="available" value="M"/>M
                                 <input type="checkbox" name="available" value="T"/>T
                                 <input type="checkbox" name="available" value="W"/>W
@@ -50,9 +63,10 @@
     </form>
   </div>
 
+  <p>&nbsp;</p>
+  <hr />
+
   <footer
-    <p>&nbsp;</p>
-    <hr />
     <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
     <p>612.342.5555</p>
   </footer>
