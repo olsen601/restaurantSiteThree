@@ -1,7 +1,7 @@
 /*
   Name: Ryan Olsen
   Date Created: 12/19/18
-  Most recent revision:
+  Most recent revision: 12/21/18
 */
 header, footer {
   text-align: center;
@@ -37,4 +37,38 @@ a:hover {
 a:active {
   color: #E74C3C;
   text-decoration: none;
+}
+.carousel-caption {
+  top: 33%;
+  left: 0;
+  color: #E74C3C;
+  width: 100%;
+  max-width: 100%;
+  height: 33%;
+  background-color: #2C3E50;
+  opacity: 0.95;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  letter-spacing: 4px;
+  overflow: hidden;
+  padding-top: 3%;
+  text-align: center;
+}
+#newsCarousel {
+  min-height: 100%;
+}
+.container {
+  padding-top: 1%;
+}
+.jumbotron {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  color: #E74C3C;
+  background-color: #2C3E50;
+}
+noscript {
+  color: red;
+  padding: 20%;
+  font-size: 1.5em;
+  font-weight: bold;
 }

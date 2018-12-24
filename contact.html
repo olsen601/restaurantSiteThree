@@ -2,13 +2,21 @@
 <!--
   Name: Ryan Olsen
   Date Created: 12/14/18
-  Most recent revision: 12/19/18
+  Most recent revision: 12/21/18
 -->
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/JavaScript" src="scripts/contactForm.js"></script>
+
     <title>Contact Us</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <style>
       .content {
@@ -30,47 +38,119 @@
 
 
 <body>
-
-  <header>
-  <h1>Pizza Crown</h1>
-  </header>
-
-  <nav>
-    <hr />
-    <p><a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a></p>
-    <hr />
-  </nav>
-
-  <div class="content">
-    <form>
-      <span id="requiredInput">Name: </span><input type="text" name="userName" required/><br>
-      <span id="requiredInput">Email: </span><input type="text" name="userEmail" required/><br>
-      <span id="requiredInput">Phone: </span><input type="text" name="userPhone" required/><br>
-      Reason for Inquiry: <select name="reason">
-                            <option value="catering">Catering</option>
-                            <option value="party">Private Party</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select><br>
-      Additional Information: <textarea name="additionalInformation"></textarea><br>
-      Have you been to the restaurant? <input type="radio" name="visited" value="NO" checked/>No <input type="radio" name="visited" value="YES"/>Yes<br>
-      Best days to contact you: <input type="checkbox" name="available" value="M"/>M
-                                <input type="checkbox" name="available" value="T"/>T
-                                <input type="checkbox" name="available" value="W"/>W
-                                <input type="checkbox" name="available" value="TH"/>Th
-                                <input type="checkbox" name="available" value="F"/>F <br>
-      <input type="submit" value="Send Request"/>
-    </form>
+  <noscript>This site is best viewed using JavaScript, please enable JavaScript for full functionality.</noscript>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <header>
+        <h1>Pizza Crown</h1>
+        </header>
+      </div>
+    </div>
   </div>
 
-  <p>&nbsp;</p>
-  <hr />
 
-  <footer
-    <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
-    <p>612.342.5555</p>
-  </footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="nav nav-pills">
+          <a class="nav-item nav-link" href="index.html"><i class="fas fa-home"></i></a>
+          <a class="nav-item nav-link" href="menu.html">Menu</a>
+          <a class="nav-item nav-link active" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+  </div>
 
+
+  <div class="container">
+      <form class="needs-validation" novalidate>
+        <div class="form-group row">
+          <label id="requiredInput" for="inputName" class="col-sm-1 col-form-label">Name:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" name="userName" required/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label id="requiredInput" for="inputEmail" class="col-sm-1 col-form-label">Email:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" name="userEmail" required/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label id="requiredInput" for="inputPhone" class="col-sm-1 col-form-label">Phone:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number" name="userPhone" required/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="formControlSelect" class="col-sm-2 col-form-label">Reason for Inquiry:</label>
+          <div class="col-sm-7">
+            <select class="form-control" id="formControlSelect" name="reason">
+              <option value="catering">Catering</option>
+              <option value="party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="formControlTextarea" class="col-sm-3 col-form-label">Additional Information:</label>
+          <div class="col-sm-6">
+            <textarea class="form-control" id="formControlTextarea" rows="4" name="additionalInformation"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-check-label">Have you been to the restaurant? </label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioNo" value="NO" checked/>
+            <label class="form-check-label" for="inlineRadioNo">No</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioYes" value="YES">
+            <label class="form-check-label" for="inlineRadioOptions">Yes</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">Best days to contact you: </label>
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxM" name="available" value="M">
+            <label class="form-check-label" for="inlineCheckboxM">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxT" name="available" value="T">
+            <label class="form-check-label" for="inlineCheckboxT">T</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxW" name="available" value="W">
+            <label class="form-check-label" for="inlineCheckboxW">W</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxTH" name="available" value="TH">
+            <label class="form-check-label" for="inlineCheckboxTH">TH</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckboxF" name="available" value="F">
+            <label class="form-check-label" for="inlineCheckboxF">F</label>
+          </div>
+        </div>
+          <button type="submit" class="btn btn-primary">Send Request</button>
+      </form>
+    </div>
+
+
+  <div class="container-fluid">
+    <p>&nbsp;</p>
+
+    <footer
+      <p>1234 N Washington Ave, Minneapolis, MN 55401</p>
+      <p>612.342.5555</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
